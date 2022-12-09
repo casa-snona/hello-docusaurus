@@ -1,0 +1,15 @@
+provider = "oidc"
+http_address = "127.0.0.1:4180"
+email_domains = ["*"]
+scope = "openid"
+
+cookie_secret = "${COOKIE_SECRET}"
+cookie_secure = false
+session_cookie_minimal = true
+
+oidc_issuer_url = "https://cognito-idp.ap-northeast-1.amazonaws.com/${USER_POOL_ID}"
+
+client_id = "${APPLICATION_CLIENT_ID}"
+client_secret = "${APPLICATION_CLIENT_SECRET}"
+
+redirect_url = "${REDIRECT_URL}"
